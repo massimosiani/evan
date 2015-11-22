@@ -1,0 +1,31 @@
+New log file opened at Sun Nov 22 17:35:16 EST 2015 by 5513@massimo-EasyNote-TM86
+Taking next connection to: 41155
+New client attempting to connect on port: 34244-41155
+  Address = /127.0.1.1:41155
+This client on port 34244 has uuid 32336e75-ada3-48fa-8dd1-772ca033a4b3 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-32336e75-ada3-48fa-8dd1-772ca033a4b3
+Taking next connection to: 41155
+New client attempting to connect on port: 34246-41155
+  Address = /127.0.1.1:41155
+Handshake exception on socket: 34246
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 41155
+New client attempting to connect on port: 34248-41155
+  Address = /127.0.1.1:41155
+This client on port 34248 has uuid 780828d2-5514-4fc4-9351-6e75b2e92ff1 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-32336e75-ada3-48fa-8dd1-772ca033a4b3, activator-780828d2-5514-4fc4-9351-6e75b2e92ff1
+Taking next connection to: 41155
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5513@massimo-EasyNote-TM86 logs at Sun Nov 22 17:38:17 EST 2015, goodbye.
